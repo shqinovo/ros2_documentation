@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Open Robotics
+# This file is distributed under the same license as the ROS 2 documentation
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ROS 2 documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-08 06:20+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/How-To-Guides/Configure-ZeroCopy-loaned-messages.rst:6
+msgid "Configure Zero Copy Loaned Messages"
+msgstr ""
+
+#: ../../source/How-To-Guides/Configure-ZeroCopy-loaned-messages.rst:10
+msgid "Contents"
+msgstr ""
+
+#: ../../source/How-To-Guides/Configure-ZeroCopy-loaned-messages.rst:12
+msgid ""
+"See the `Loaned Messages "
+"<https://design.ros2.org/articles/zero_copy.html>`__ article for details "
+"on how loaned messages work."
+msgstr ""
+
+#: ../../source/How-To-Guides/Configure-ZeroCopy-loaned-messages.rst:15
+msgid "How to disable Loaned Messages"
+msgstr ""
+
+#: ../../source/How-To-Guides/Configure-ZeroCopy-loaned-messages.rst:18
+msgid "Publishers"
+msgstr ""
+
+#: ../../source/How-To-Guides/Configure-ZeroCopy-loaned-messages.rst:20
+msgid ""
+"By default, *Loaned Messages* will try to borrow the memory from "
+"underlying middleware if it supports *Loaned Messages*. The "
+"``ROS_DISABLE_LOANED_MESSAGES`` environment variable can be used to "
+"disable *Loaned Messages*, and fallback to normal publisher behavior, "
+"without any code changes or middleware configuration. You can set the "
+"environment variable with the following command:"
+msgstr ""
+
+#: ../../source/How-To-Guides/Configure-ZeroCopy-loaned-messages.rst:26
+#: ../../source/How-To-Guides/Configure-ZeroCopy-loaned-messages.rst:72
+msgid "Linux"
+msgstr ""
+
+#: ../../source/How-To-Guides/Configure-ZeroCopy-loaned-messages.rst:32
+#: ../../source/How-To-Guides/Configure-ZeroCopy-loaned-messages.rst:44
+#: ../../source/How-To-Guides/Configure-ZeroCopy-loaned-messages.rst:78
+#: ../../source/How-To-Guides/Configure-ZeroCopy-loaned-messages.rst:90
+msgid ""
+"To maintain this setting between shell sessions, you can add the command "
+"to your shell startup script:"
+msgstr ""
+
+#: ../../source/How-To-Guides/Configure-ZeroCopy-loaned-messages.rst:38
+#: ../../source/How-To-Guides/Configure-ZeroCopy-loaned-messages.rst:84
+msgid "macOS"
+msgstr ""
+
+#: ../../source/How-To-Guides/Configure-ZeroCopy-loaned-messages.rst:50
+#: ../../source/How-To-Guides/Configure-ZeroCopy-loaned-messages.rst:96
+msgid "Windows"
+msgstr ""
+
+#: ../../source/How-To-Guides/Configure-ZeroCopy-loaned-messages.rst:56
+#: ../../source/How-To-Guides/Configure-ZeroCopy-loaned-messages.rst:102
+msgid "If you want to make this permanent between shell sessions, also run:"
+msgstr ""
+
+#: ../../source/How-To-Guides/Configure-ZeroCopy-loaned-messages.rst:64
+msgid "Subscriptions"
+msgstr ""
+
+#: ../../source/How-To-Guides/Configure-ZeroCopy-loaned-messages.rst:66
+msgid ""
+"Currently using *Loaned Messages* is not safe on subscription, see more "
+"details in `this issue "
+"<https://github.com/ros2/rmw_cyclonedds/issues/469>`_. Because of this, "
+"by default *Loaned Messages* is ``disabled`` on subscription with `Set "
+"disable loan to on by default <https://github.com/ros2/rcl/pull/1110>`_ "
+"even though underlying middleware supports that. To enable *Loaned "
+"Messages* on subscription, you need to set the environment variable "
+"``ROS_DISABLE_LOANED_MESSAGES`` to ``0`` explicitly."
+msgstr ""
+
